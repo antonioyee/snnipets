@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+public function filas${1}(){
+	\$this->db->join('','','');
+	\$this->db->where('', \$this->input->post(''));
+	\$query = \$this->db->get('${1}');
+	return \$query->num_rows();
+}
+]]></content>
+	<tabTrigger>filasbd</tabTrigger>
+</snippet>

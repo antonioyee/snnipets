@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+\$data[''] = \$this->input->post('');
+\$this->db->where('', \$this->input->post(''));
+return \$this->db->insert('nombre-tabla', \$data);
+]]></content>
+	<tabTrigger>guardarbd</tabTrigger>
+</snippet>

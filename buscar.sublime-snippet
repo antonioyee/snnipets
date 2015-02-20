@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+<form id="form-buscar-${1}" name="form-buscar-${1}" class="form-horizontal well form-search" action="#" method="POST" onsubmit="return(false)" >
+	<fieldset>
+		<div class="control-group">
+			<label class="control-label" >Búsqueda</label>
+			<div class="controls">
+				<input type="text" class="input-xlarge search-query" id="buscar-${1}" name="buscar-${1}" placeholder="ingrese texto a buscar.." />
+				<button  type="submit" id="btn-buscar-${1}" class="btn btn-success"><i class="icon-search icon-white"></i> Buscar</button>
+			</div>
+		</div>
+	</fieldset>
+</form>
+]]></content>
+	<tabTrigger>buscar</tabTrigger>  
+</snippet>

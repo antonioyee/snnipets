@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+public function ${1}(){
+	if (\$this->input->is_ajax_request()) {
+		echo json_encode(\$resultado);
+	}
+}
+]]></content>
+	<tabTrigger>fjson</tabTrigger>
+</snippet>
+

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+<script type="text/javascript">
+\$(function() {
+	\$('.opcion').tooltip();
+});
+</script>
+]]></content>
+	<tabTrigger>jsgral</tabTrigger> 
+</snippet>

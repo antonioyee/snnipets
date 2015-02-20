@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+\$('#${1}').click(function(){
+	\$.post('<?=base_url()?>${2}/${3}', \$('#${4}').serialize(), function(resultado){
+		if(resultado.exito === true){
+			${5}
+		}else{
+			if(resultado.exito === false){
+				${6}
+			};
+		};
+	},'json');
+	return false;
+});
+]]></content>
+<tabTrigger>clickjs</tabTrigger>  
+</snippet>

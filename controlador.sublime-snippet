@@ -1,0 +1,59 @@
+<snippet>
+	<content><![CDATA[
+<?php if (! defined('BASEPATH')) exit('No direct script access');
+/** 
+ * @package Nombre del Sistema
+ * @subpackage ${1}
+ * @author Antonio Yee { yee.antonio@gmail.com }
+ */ 
+class ${1} extends CI_Controller {
+	var \$totalFilas = 10;
+	var \$num_links = 2;
+
+	public function __construct(){
+		parent::__construct();
+		\$this->load->library('pagination');
+		\$this->load->model('${1}_model','${1}Model');
+	}
+
+	public function index(){
+	}
+
+	public function ${1}(){
+	}
+
+	/**
+	* Configuración para la paginación
+	*/
+	private function _paginacion(\$filastotales,\$controlador,\$funcion){
+		\$configPaginacion = array(
+			'base_url' => base_url().''.\$controlador.'/'.\$funcion,
+			'total_rows' =>  \$filastotales,
+			'per_page' => \$this->totalFilas,
+			'num_links' => \$this->num_links,
+			'first_link' => 'Primero',
+			'next_link'	=> '&raquo;',
+			'prev_link'	=> '&laquo;',
+			'last_link'	=> 'Ultimo',
+			'full_tag_open'	=> '<div class="pagination pagination-right"><ul>',
+			'full_tag_close' => '</ul></div>',
+			'first_tag_open' => '<li>',
+			'first_tag_close' => '</li>',
+			'last_tag_open'	=> '<li>',
+			'last_tag_close' => '</li>',
+			'cur_tag_open' => '<li class="active"><a>',
+			'cur_tag_close' => '</a></li>',
+			'next_tag_open' => '<li>',
+			'next_tag_close' => '</li>',
+			'prev_tag_open' => '<li>',
+			'prev_tag_close' => '</li>',
+			'num_tag_open' => '<li>',
+			'num_tag_close' => '</li>');
+		\$this->pagination->initialize(\$configPaginacion);
+	}
+}
+/* End of file ${1}.php */
+/* Location: ./controllers/${1}.php */
+]]></content>
+<tabTrigger>controlador</tabTrigger> 
+</snippet>

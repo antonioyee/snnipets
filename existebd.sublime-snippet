@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+public function existe${1}(){
+	\$this->db->select('');
+	\$this->db->from('${1}');
+	\$this->db->where('', );
+	\$this->db->limit(1); 		
+	\$query = \$this->db->get();
+	if(\$query->num_rows() == 1) {
+	    return TRUE;
+	}else{
+	    return FALSE;
+	}
+}
+]]></content>
+	<tabTrigger>existebd</tabTrigger>
+</snippet>

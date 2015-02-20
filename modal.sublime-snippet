@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+<div class="modal hide fade" id="modal-${1}">
+	<div class="modal-header lead">
+		<button type="button" class="close" data-dismiss="modal">×</button>
+		<span>${2}</span>
+	</div>
+	<div class="modal-body">
+		<form id="form-${1}" name="form-${1}" class="form-horizontal" action="#" method="POST" onsubmit="return(false)" >
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label"></label>
+					<div class="controls">
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<div class="modal-footer">
+		<button type="reset" class="btn" id="btn-cancelar-${1}">Cancelar</button>
+		<button type="submit" class="btn btn-primary" id="btn-guardar-${1}">Enviar</button>
+	</div>
+</div>
+]]></content>
+<tabTrigger>modal</tabTrigger>  
+</snippet>

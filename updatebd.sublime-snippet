@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+\$data[''] = \$this->input->post('');
+\$this->db->where('', \$this->input->post(''));
+\$this->db->limit(1);
+return \$this->db->update('nombre-tabla', \$data);
+]]></content>
+	<tabTrigger>updatebd</tabTrigger>
+</snippet>

@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+public function nuevo${1}(){
+	if (\$this->input->is_ajax_request()) {
+		\$this->load->library("form_validation");
+		\$this->form_validation->set_rules('nombre-elemento','msj-elemento','trim|xss_clean|required');
+		if (\$this->form_validation->run() === FALSE){
+			\$resultado['mensaje'] = current(\$this->form_validation->_error_array);
+			\$resultado['exito'] = FALSE;
+		}else{
+			\$this->${2}Model->nuevo${1}();
+			\$resultado['mensaje'] = '${1} Guardado';
+			\$resultado['exito'] = TRUE;
+		}
+		echo json_encode(\$resultado);
+	}
+}
+]]></content>
+	<tabTrigger>nuevo</tabTrigger>
+</snippet>

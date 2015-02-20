@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+public function listado${1}(\$numeroFilas,\$segment) {
+	\$this->db->select('');
+	\$this->db->join('','','');
+	\$this->db->where('', \$this->input->post(''));
+	\$this->db->order_by('','ASC / DESC');
+	\$query = \$this->db->get('${1}',\$numeroFilas,((\$segment>0) ? \$segment:0));
+	return \$query->result();
+}
+]]></content>
+	<tabTrigger>listadobd</tabTrigger>
+</snippet>
