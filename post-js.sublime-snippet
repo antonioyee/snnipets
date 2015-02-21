@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+\$.post(app.url + '', \$('').serialize(), function(resultado){
+	if( resultado.exito === true ){
+		// A tirar código
+	}else{
+		// A tirar código
+	};
+},'json');
+return false;
+]]></content>
+<tabTrigger>post-js</tabTrigger>  
+</snippet>

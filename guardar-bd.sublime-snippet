@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+\$nuevo[''] = // variables;
+
+\$this->db->insert('', \$nuevo);
+]]></content>
+	<tabTrigger>guardar-bd</tabTrigger>
+</snippet>

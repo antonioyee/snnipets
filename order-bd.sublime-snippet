@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+\$this->db->order_by('', ''); // ASC || DESC
+]]></content>
+	<tabTrigger>order-by-bd</tabTrigger>
+</snippet>

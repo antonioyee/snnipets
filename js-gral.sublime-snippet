@@ -2,9 +2,9 @@
 	<content><![CDATA[
 <script type="text/javascript">
 \$(function() {
-	\$('.opcion').tooltip();
+	// A tirar código
 });
 </script>
 ]]></content>
-	<tabTrigger>jsgral</tabTrigger> 
+	<tabTrigger>js-gral</tabTrigger> 
 </snippet>

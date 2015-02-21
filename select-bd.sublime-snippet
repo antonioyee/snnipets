@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+\$this->db->select('');
+\$this->db->from('');
+\$this->db->get()->result();
+]]></content>
+	<tabTrigger>select-bd</tabTrigger>
+</snippet>

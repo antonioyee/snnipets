@@ -2,21 +2,19 @@
 	<content><![CDATA[
 <?php if (! defined('BASEPATH')) exit('No direct script access');
 /** 
- * @package Nombre del Sistema
- * @subpackage ${1}_model
- * @author Antonio Yee { yee.antonio@gmail.com }
+ * @package { NombreApp }
+ * @subpackage ${1}_modelo
+ * @author Antonio Yee || yee.antonio@gmail.com || @antonioyee
  */ 
-class ${1}_model extends CI_Model{
+class ${1}_modelo extends CI_Model{
 	
 	public function __construct(){
 		parent::__construct();
 	}
 
-	${2}
-
 }
-/* End of file ${1}_model.php */
-/* Location: ./models/${1}_model.php */
+/* End of file ${1}_modelo.php */
+/* Location: ./models/${1}_modelp.php */
 ]]></content>
 	<tabTrigger>modelo</tabTrigger>
 </snippet>

@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+<div class="form-group">
+	<label class="col-md-3 col-lg-3 control-label" for="${1}">${1}</label>
+	<div class="col-md-9 col-lg-8">
+		<input type="text" id="${1}" name="${1}" class="form-control" />
+	</div>
+</div>
+]]></content>
+	<tabTrigger>frm-text</tabTrigger>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+console.table();
+]]></content>
+<tabTrigger>consola-tbl</tabTrigger> 
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+\$this->db->like('');
+]]></content>
+	<tabTrigger>like-bd</tabTrigger>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+public function NombreFuncion${1}(\$filas = NULL, \$segmento = NULL, \$listado = NULL) {
+	\$this->db->select('');
+	\$this->db->join('', '', '');
+	\$this->db->where('', );
+	\$this->db->order_by('', ''); // ASC || DESC
+
+	if ( \$listado ) {
+		return \$this->db->get('', \$filas, ((\$segmento > 0) ? \$segmento:0))->result();
+	}else{
+		return \$this->db->from('')->get()->num_rows();
+	}
+}
+]]></content>
+	<tabTrigger>paginacion-bd</tabTrigger>
+</snippet>

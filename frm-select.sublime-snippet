@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+<div class="form-group">
+	<label class="col-md-3 col-lg-3 control-label" for="${1}">${1}</label>
+	<div class="col-md-9 col-lg-8">
+		<select name="${1}" id="${1}" class="form-control">
+			<option value="">Seleccione</option>
+			<option value=""></option>
+		</select>
+	</div>
+</div>
+]]></content>
+	<tabTrigger>frm-select</tabTrigger>
+</snippet>

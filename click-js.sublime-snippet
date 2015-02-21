@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+\$('').click(function(){
+	// A tirar código
+});
+]]></content>
+<tabTrigger>click-js</tabTrigger>  
+</snippet>
